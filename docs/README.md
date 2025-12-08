@@ -202,14 +202,6 @@ See `/docs/architecture.md` for detailed architecture documentation.
 4. Add environment variable: `VITE_API_URL`
 5. Deploy
 
-
-### Screenshot:
-
-<img width="948" height="437" alt="image" src="https://github.com/user-attachments/assets/82a4bc07-b8eb-4b60-b200-00e5d2e68a1c" />
-
-
-
-
 ## Contributing
 
 This project follows clean code principles and modular architecture. When contributing:
