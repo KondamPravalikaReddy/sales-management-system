@@ -15,7 +15,9 @@ RESTful API for the Retail Sales Management System.
 npm install
 ```
 
-2. Place the CSV file at `backend/data/sales_data.csv`
+2.  Create a Folder data
+
+   Place the CSV file at `backend/data/sales_data.csv`
 
 3. Start the development server:
 ```bash
