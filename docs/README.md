@@ -72,6 +72,13 @@ Efficient pagination system that handles large datasets while keeping the interf
 - Shows current range (e.g., "Showing 1 to 10 of 150")
 - Maintains search, filter, and sort states
 
+  ## Screenshots:
+  
+  <img width="1892" height="873" alt="Screenshot 2025-12-09 141018" src="https://github.com/user-attachments/assets/4d7ef313-45ae-4d05-9c28-9e5bddd0ef9d" />
+
+
+  <img width="1898" height="875" alt="Screenshot 2025-12-09 141032" src="https://github.com/user-attachments/assets/dadaa47e-93c4-4bea-bb3e-03ed016c5c25" />
+
 **Implementation:**
 - Server-side pagination for performance
 - Smart page number display (max 5 visible)
@@ -107,6 +114,7 @@ mkdir data
 # Create .env file
 PORT=5000
 NODE_ENV=development
+MONGODB_URI=mongodb://localhost:27017/salesdb
 ```
 
 5. Start the server:
@@ -202,6 +210,12 @@ See `/docs/architecture.md` for detailed architecture documentation.
 4. Add environment variable: `VITE_API_URL`
 5. Deploy
 
+# Live Links:
+1.Backend: 'https://balanced-unity-production-de97.up.railway.app/'
+
+
+2.Frontend: 'https://sales-management-system-pwrr.vercel.app/'
+
 ## Contributing
 
 This project follows clean code principles and modular architecture. When contributing:
@@ -212,10 +226,3 @@ This project follows clean code principles and modular architecture. When contri
 4. Test all features before committing
 5. Update documentation as needed
 
-## License
-
-MIT License - feel free to use this project for learning or development.
-
-## Author
-
-Developed as part of TruEstate SDE Intern Assignment
