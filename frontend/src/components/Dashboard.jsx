@@ -80,7 +80,7 @@ const Dashboard = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 py-6">
-        {/* Search and Controls */}
+        {/* Search and Controls - SINGLE ROW */}
         <div className="bg-white rounded-lg shadow-sm p-4 mb-6">
           <div className="flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
             <SearchBar value={filters.search} onChange={handleSearchChange} />
@@ -103,7 +103,7 @@ const Dashboard = () => {
             </div>
           </div>
 
-          {/* Active Filters */}
+          {/* Active Filters Tags */}
           {activeFiltersCount > 0 && (
             <div className="mt-4 pt-4 border-t">
               <div className="flex items-center gap-2 flex-wrap">

@@ -6,16 +6,23 @@
   "type": "module",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "import": "node --max-old-space-size=8192 src/scripts/importData.js"
+
   },
-  "keywords": ["sales", "management", "api"],
+  "keywords": [
+    "sales",
+    "management",
+    "api"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2",
     "cors": "^2.8.5",
     "csv-parser": "^3.0.0",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^9.0.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"

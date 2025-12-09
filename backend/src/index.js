@@ -1,9 +1,13 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import connectDB from './config/database.js';
 import salesRoutes from './routes/salesRoutes.js';
 
 dotenv.config();
+
+// Connect to MongoDB
+connectDB();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -18,7 +22,11 @@ app.use('/api/sales', salesRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'OK', message: 'Server is running' });
+  res.json({ 
+    status: 'OK', 
+    message: 'Server is running',
+    database: 'MongoDB Atlas'
+  });
 });
 
 // Error handling middleware
@@ -36,6 +44,6 @@ app.use((req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-  console.log(`Health check: http://localhost:${PORT}/api/health`);
+  console.log(`🚀 Server is running on port ${PORT}`);
+  console.log(`📍 Health check: http://localhost:${PORT}/api/health`);
 });
